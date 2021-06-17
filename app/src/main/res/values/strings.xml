@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Anaemia Detection</string>
+    <string name="app_logo">Anaemia Detection Logo</string>
+    <string name="app_family">Anaemia Detection Family</string>
+    <string name="college_logo">MIT-WPU Logo</string>
+    <string name="app_about_button">About</string>
+    <string name="app_get_started_button">Get Started</string>
+    <string name="app_back_button">Back</string>
+    <string name="app_next_button">Next</string>
+    <string name="app_name_anaemia_uppercase">ANAEMIA</string>
+    <string name="app_name_detection_uppercase">DETECTION</string>
+    <string name="app_about_uppercase">ABOUT</string>
+    <string name="app_group_members_uppercase">GROUP MEMBERS</string>
+    <string name="app_group_member_one">Shubham Jain</string>
+    <string name="app_group_member_two">Aarushi Gupta</string>
+    <string name="app_group_member_three">Ahmad Jamal Shaikh</string>
+    <string name="app_group_member_four">Shreyanshi Tripathi</string>
+    <string name="app_guide_uppercase">GUIDE</string>
+    <string name="app_guide_name">Prof. Shilpa Sonawani</string>
+    <string name="app_group_members_branch_uppercase">SCHOOL OF COMPUTER ENGINEERING &amp; TECHNOLOGY</string>
+    <string name="app_group_members_college_uppercase">MIT - WORLD PEACE UNIVERSITY</string>
+    <string name="app_idf_instruction_uppercase">PLEASE FILL IN THE FOLLOWING INFORMATION.</string>
+    <string name="app_idf_name">NAME :</string>
+    <string name="app_idf_name_hint">PLEASE ENTER YOUR NAME.</string>
+    <string name="app_idf_dob">DATE OF BIRTH :</string>
+    <string name="app_idf_dob_hint">PLEASE ENTER YOUR DATE OF BIRTH.</string>
+</resources>

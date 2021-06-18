@@ -10,7 +10,6 @@
         android:id="@+id/advanceToSymptomsFromIDFButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:contentDescription="@string/app_get_started_button"
         android:fontFamily="@font/kadwa_bold"
         android:text="@string/app_next_button"
@@ -19,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfEmailAddressEditText" />
 
     <ImageView
         android:id="@+id/appLogoIDF"
@@ -83,8 +83,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:ems="10"
-        android:hint="@string/app_idf_name_hint"
         android:fontFamily="@font/kadwa_bold"
+        android:hint="@string/app_idf_name_placeholder"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -106,21 +106,114 @@
 
     <EditText
         android:id="@+id/idfDobEditText"
-        android:clickable="false"
-        android:cursorVisible="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:clickable="false"
+        android:cursorVisible="false"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:fontFamily="@font/kadwa_bold"
-        android:hint="@string/app_idf_dob_hint"
+        android:hint="@string/app_idf_dob_placeholder"
         android:inputType="date"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfDobText" />
+
+    <TextView
+        android:id="@+id/idfGenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_idf_gender"
+        android:textColor="#ed1b24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfDobEditText" />
+
+    <RadioButton
+        android:id="@+id/idfMaleRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_idf_gender_male"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
+
+    <RadioButton
+        android:id="@+id/idfFemaleRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_idf_gender_female"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/idfMaleRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
+
+    <TextView
+        android:id="@+id/idfMobileNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_idf_mobile_no"
+        android:textColor="#ed1b24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfMaleRadioButton" />
+
+    <EditText
+        android:id="@+id/idfMobileNoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:fontFamily="@font/kadwa_bold"
+        android:hint="@string/app_idf_mobile_no_placeholder"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfMobileNoText" />
+
+    <TextView
+        android:id="@+id/idfEmailAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_idf_email_address"
+        android:textColor="#ed1b24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfMobileNoEditText" />
+
+    <EditText
+        android:id="@+id/idfEmailAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:fontFamily="@font/kadwa_bold"
+        android:hint="@string/app_idf_email_address_placeholder"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idfEmailAddressText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

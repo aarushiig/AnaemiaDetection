@@ -21,7 +21,14 @@
     <string name="app_group_members_college_uppercase">MIT - WORLD PEACE UNIVERSITY</string>
     <string name="app_idf_instruction_uppercase">PLEASE FILL IN THE FOLLOWING INFORMATION.</string>
     <string name="app_idf_name">NAME :</string>
-    <string name="app_idf_name_hint">PLEASE ENTER YOUR NAME.</string>
+    <string name="app_idf_name_placeholder">John Doe</string>
     <string name="app_idf_dob">DATE OF BIRTH :</string>
-    <string name="app_idf_dob_hint">PLEASE ENTER YOUR DATE OF BIRTH.</string>
+    <string name="app_idf_dob_placeholder">21/06/2000</string>
+    <string name="app_idf_gender">GENDER :</string>
+    <string name="app_idf_gender_male">Male</string>
+    <string name="app_idf_gender_female">Female</string>
+    <string name="app_idf_mobile_no">MOBILE NO. :</string>
+    <string name="app_idf_mobile_no_placeholder">9xxxxxxxxx0</string>
+    <string name="app_idf_email_address">EMAIL ADDRESS :</string>
+    <string name="app_idf_email_address_placeholder">username@example.com</string>
 </resources>

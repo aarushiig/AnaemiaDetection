@@ -39,6 +39,9 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
             idfDobEditText.setText(simpleDateFormat.format(calendar.getTime()));
         };
         idfDobEditText.setOnClickListener(v -> new DatePickerDialog(IdentificationDataFormActivity.this, dateSetListener, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show());
+
+        final Button advanceToSymptomsFromIdfButton = (Button) findViewById(R.id.advanceToSymptomsFromIDFButton);
+        advanceToSymptomsFromIdfButton.setOnClickListener(this);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -47,6 +50,9 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
         if (v.getId() == R.id.backToMainFromIDFButton) {
             Intent toMainIntent = new Intent(IdentificationDataFormActivity.this, MainActivity.class);
             startActivity(toMainIntent);
+        } else if (v.getId() == R.id.advanceToSymptomsFromIDFButton) {
+            Intent toSymptoms = new Intent(IdentificationDataFormActivity.this, SymptomsFormActivity.class);
+            startActivity(toSymptoms);
         }
     }
 

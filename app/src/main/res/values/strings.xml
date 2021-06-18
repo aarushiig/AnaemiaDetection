@@ -31,4 +31,19 @@
     <string name="app_idf_mobile_no_placeholder">9xxxxxxxxx0</string>
     <string name="app_idf_email_address">EMAIL ADDRESS :</string>
     <string name="app_idf_email_address_placeholder">username@example.com</string>
+    <string name="app_symptoms_instruction_uppercase">PLEASE SELECT THE RELEVANT SYMPTOMS.</string>
+    <string name="app_symptoms_whole_body">WHOLE BODY :</string>
+    <string name="app_symptoms_fatigue">Fatigue</string>
+    <string name="app_symptoms_light_headedness">Light-headedness</string>
+    <string name="app_symptoms_dizziness">Dizziness</string>
+    <string name="app_symptoms_malaise">Malaise</string>
+    <string name="app_symptoms_heart">HEART :</string>
+    <string name="app_symptoms_fast_heart_rate">Fast heart-rate</string>
+    <string name="app_symptoms_palpitations">Palpitations</string>
+    <string name="app_symptoms_common">COMMON :</string>
+    <string name="app_symptoms_headache">Headache</string>
+    <string name="app_symptoms_weakness">Weakness</string>
+    <string name="app_symptoms_brittle_nails">Brittle nails</string>
+    <string name="app_symptoms_pallor">Pallor</string>
+    <string name="app_symptoms_shortness_of_breath">Shortness of breath</string>
 </resources>

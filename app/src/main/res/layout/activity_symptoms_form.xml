@@ -6,4 +6,233 @@
     android:layout_height="match_parent"
     tools:context=".SymptomsFormActivity">
 
+    <Button
+        android:id="@+id/advanceToCaptureImagesFromSymptomsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_next_button"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_next_button"
+        android:textColor="@color/black"
+        app:backgroundTint="#caf55f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsShortnessOfBreathRadioButton" />
+
+    <ImageView
+        android:id="@+id/appLogoSymptoms"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anaemia_detection_logo" />
+
+    <Button
+        android:id="@+id/backToIDFFromSymptomsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_back_button"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_back_button"
+        android:textColor="@color/black"
+        app:backgroundTint="#00b4ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/symptomsInstructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_instruction_uppercase"
+        android:textColor="#004763"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogoSymptoms" />
+
+    <TextView
+        android:id="@+id/symptomsWholeBodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_whole_body"
+        android:textColor="#ed1b24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsInstructionText" />
+
+    <RadioButton
+        android:id="@+id/symptomsFatigueRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_fatigue"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsWholeBodyText" />
+
+    <RadioButton
+        android:id="@+id/symptomsLightHeadednessRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_light_headedness"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/symptomsDizzinessRradioButton"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsWholeBodyText" />
+
+    <RadioButton
+        android:id="@+id/symptomsDizzinessRradioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_dizziness"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsFatigueRadioButton" />
+
+    <RadioButton
+        android:id="@+id/symptomsMalaiseRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_malaise"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/symptomsDizzinessRradioButton"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsFatigueRadioButton" />
+
+    <TextView
+        android:id="@+id/symptomsHeartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_heart"
+        android:textColor="#ed1b24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsDizzinessRradioButton" />
+
+    <RadioButton
+        android:id="@+id/symptomsFastHeartRateRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_fast_heart_rate"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsHeartText" />
+
+    <RadioButton
+        android:id="@+id/symptomsPalpitationsRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_palpitations"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/symptomsFastHeartRateRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsHeartText" />
+
+    <TextView
+        android:id="@+id/symptomsCommonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_common"
+        android:textColor="#ed1b24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsFastHeartRateRadioButton" />
+
+    <RadioButton
+        android:id="@+id/symptomsHeadacheRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_headache"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsCommonText" />
+
+    <RadioButton
+        android:id="@+id/symptomsWeaknessRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_weakness"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/symptomsBrittleNailsRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsCommonText" />
+
+    <RadioButton
+        android:id="@+id/symptomsBrittleNailsRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_brittle_nails"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsHeadacheRadioButton" />
+
+    <RadioButton
+        android:id="@+id/symptomsPallorRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_pallor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/symptomsBrittleNailsRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsHeadacheRadioButton" />
+
+    <RadioButton
+        android:id="@+id/symptomsShortnessOfBreathRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_symptoms_shortness_of_breath"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsBrittleNailsRadioButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnaemiaDetection">
-        <activity android:name=".CaptureImagesActivity"></activity>
+        <activity android:name=".ResultsActivity"></activity>
+        <activity android:name=".CaptureImagesActivity" />
         <activity android:name=".SymptomsFormActivity" />
         <activity android:name=".IdentificationDataFormActivity" />
         <activity android:name=".AboutActivity" />

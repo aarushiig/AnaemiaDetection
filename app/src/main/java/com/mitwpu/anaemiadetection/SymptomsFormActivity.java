@@ -8,13 +8,15 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import java.util.Objects;
+
 public class SymptomsFormActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_symptoms_form);
 
         final Button backToIDFFromSymptomsButton = (Button) findViewById(R.id.backToIDFFromSymptomsButton);

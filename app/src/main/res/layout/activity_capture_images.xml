@@ -6,4 +6,135 @@
     android:layout_height="match_parent"
     tools:context=".CaptureImagesActivity">
 
+    <ImageView
+        android:id="@+id/appLogoCaptureImages"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anaemia_detection_logo" />
+
+    <Button
+        android:id="@+id/backToSymptomsFromCaptureImagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_back_button"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_back_button"
+        android:textColor="@color/black"
+        app:backgroundTint="#00b4ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_get_results"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_get_results"
+        android:textColor="@color/black"
+        app:backgroundTint="#caf55f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesClickRightEyeImageButton" />
+
+    <TextView
+        android:id="@+id/captureImagesInstructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_capture_images_instruction_uppercase"
+        android:textColor="#004763"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogoCaptureImages" />
+
+    <TextView
+        android:id="@+id/captureImagesLeftEyeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_capture_images_left_eye"
+        android:textColor="#ed1b24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesInstructionText" />
+
+    <ImageView
+        android:id="@+id/captureImagesLeftEyeImage"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_capture_images_left_eye_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesLeftEyeText" />
+
+    <Button
+        android:id="@+id/captureImagesClickLeftEyeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_click_image_button"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="#ed1b24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesLeftEyeImage" />
+
+    <TextView
+        android:id="@+id/captureImagesRightEyeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_capture_images_right_eye"
+        android:textColor="#ed1b24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesClickLeftEyeImageButton" />
+
+    <ImageView
+        android:id="@+id/captureImagesRightEyeImage"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_capture_images_right_eye_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesRightEyeText" />
+
+    <Button
+        android:id="@+id/captureImagesClickRightEyeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kadwa_bold"
+        android:text="@string/app_click_image_button"
+        android:textColor="@color/white"
+        app:backgroundTint="#ed1b24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureImagesRightEyeImage" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

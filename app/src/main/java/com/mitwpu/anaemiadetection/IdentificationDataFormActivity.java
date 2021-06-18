@@ -51,8 +51,8 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
             Intent toMainIntent = new Intent(IdentificationDataFormActivity.this, MainActivity.class);
             startActivity(toMainIntent);
         } else if (v.getId() == R.id.advanceToSymptomsFromIDFButton) {
-            Intent toSymptoms = new Intent(IdentificationDataFormActivity.this, SymptomsFormActivity.class);
-            startActivity(toSymptoms);
+            Intent toSymptomsIntent = new Intent(IdentificationDataFormActivity.this, SymptomsFormActivity.class);
+            startActivity(toSymptomsIntent);
         }
     }
 

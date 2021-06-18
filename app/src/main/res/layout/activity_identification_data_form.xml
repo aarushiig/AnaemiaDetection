@@ -10,7 +10,7 @@
         android:id="@+id/advanceToSymptomsFromIDFButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/app_get_started_button"
+        android:contentDescription="@string/app_next_button"
         android:fontFamily="@font/kadwa_bold"
         android:text="@string/app_next_button"
         android:textColor="@color/black"
@@ -40,7 +40,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="@string/app_about_button"
+        android:contentDescription="@string/app_back_button"
         android:fontFamily="@font/kadwa_bold"
         android:text="@string/app_back_button"
         android:textColor="@color/black"
@@ -86,7 +86,6 @@
         android:fontFamily="@font/kadwa_bold"
         android:hint="@string/app_idf_name_placeholder"
         android:inputType="textPersonName"
-        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfNameText" />
@@ -118,7 +117,6 @@
         android:fontFamily="@font/kadwa_bold"
         android:hint="@string/app_idf_dob_placeholder"
         android:inputType="date"
-        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfDobText" />
@@ -144,7 +142,7 @@
         android:layout_marginLeft="16dp"
         android:fontFamily="@font/kadwa_bold"
         android:text="@string/app_idf_gender_male"
-        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
 
@@ -156,7 +154,7 @@
         android:layout_marginLeft="16dp"
         android:fontFamily="@font/kadwa_bold"
         android:text="@string/app_idf_gender_female"
-        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/idfMaleRadioButton"
         app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
 
@@ -183,7 +181,6 @@
         android:fontFamily="@font/kadwa_bold"
         android:hint="@string/app_idf_mobile_no_placeholder"
         android:inputType="number"
-        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfMobileNoText" />
@@ -211,7 +208,6 @@
         android:fontFamily="@font/kadwa_bold"
         android:hint="@string/app_idf_email_address_placeholder"
         android:inputType="textEmailAddress"
-        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfEmailAddressText" />

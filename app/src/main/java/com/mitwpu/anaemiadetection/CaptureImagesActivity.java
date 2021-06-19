@@ -56,8 +56,8 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
 //            startActivityForResult(rightEyeImageCaptureIntent, 1);
 //        }
         else if (v.getId() == R.id.getResultsButton) {
-            Intent toResultsIntent = new Intent(CaptureImagesActivity.this, ResultsActivity.class);
-            startActivity(toResultsIntent);
+            Intent toLoadingResultsIntent = new Intent(CaptureImagesActivity.this, LoadingResultsActivity.class);
+            startActivity(toLoadingResultsIntent);
         }
     }
 

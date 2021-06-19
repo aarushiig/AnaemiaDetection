@@ -7,6 +7,8 @@
     <string name="app_get_started_button">Get Started</string>
     <string name="app_back_button">Back</string>
     <string name="app_next_button">Next</string>
+    <string name="app_click_image_button">Click Image</string>
+    <string name="app_get_results">Get Results</string>
     <string name="app_name_anaemia_uppercase">ANAEMIA</string>
     <string name="app_name_detection_uppercase">DETECTION</string>
     <string name="app_about_uppercase">ABOUT</string>
@@ -46,4 +48,9 @@
     <string name="app_symptoms_brittle_nails">Brittle nails</string>
     <string name="app_symptoms_pallor">Pallor</string>
     <string name="app_symptoms_shortness_of_breath">Shortness of breath</string>
+    <string name="app_capture_images_instruction_uppercase">PLEASE CAPTURE IMAGES OF THE EYES.</string>
+    <string name="app_capture_images_left_eye">LEFT EYE :</string>
+    <string name="app_capture_images_left_eye_image">Left Eye Image</string>
+    <string name="app_capture_images_right_eye">RIGHT EYE :</string>
+    <string name="app_capture_images_right_eye_image">Right Eye Image</string>
 </resources>

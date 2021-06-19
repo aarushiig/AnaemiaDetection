@@ -30,7 +30,6 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
     String age;
 
     PersonData user_data= new PersonData();
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,35 +61,7 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
         idfDobEditText.setOnClickListener(v -> new DatePickerDialog(IdentificationDataFormActivity.this, dateSetListener, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show());
 
         advanceToSymptomsFromIdfButton = (Button) findViewById(R.id.advanceToSymptomsFromIDFButton);
-
-        intent = new Intent(getApplicationContext(),SymptomsFormActivity.class);
-
-        advanceToSymptomsFromIdfButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                user_data.setName(idfNameEditText.getText().toString());
-                user_data.setAge(age);
-
-                if(idfGenderRadioGroup.getCheckedRadioButtonId()==-1)
-                {
-                    Toast.makeText(getApplicationContext(), "Please select Gender", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    // get selected radio button from radioGroup
-                    int selectedId = idfGenderRadioGroup.getCheckedRadioButtonId();
-                    // find the radiobutton by returned id
-                    selectedRadioButton = (RadioButton)findViewById(selectedId);
-                }
-                user_data.setSex(selectedRadioButton.getText().toString());
-                user_data.setMobileNo(idfMobileNoEditText.getText().toString());
-                user_data.setEmail(idfEmailAddressEditText.getText().toString());
-
-                intent.putExtra("FormData",user_data);
-                startActivity(intent);
-//                Toast.makeText(getApplicationContext(),"Name:"+user_data.name+"\nAge:"+user_data.age+"\nSex:"+user_data.sex+"\nNo:"+user_data.mobileNo+"\nEmail:"+user_data.email,Toast.LENGTH_LONG).show();
-            }
-        });
+        advanceToSymptomsFromIdfButton.setOnClickListener(this);
     }
 
     private String getAge(int year, int month, int day){
@@ -119,6 +90,26 @@ public class IdentificationDataFormActivity extends AppCompatActivity implements
             startActivity(toMainIntent);
         } else if (v.getId() == R.id.advanceToSymptomsFromIDFButton) {
             Intent toSymptomsIntent = new Intent(IdentificationDataFormActivity.this, SymptomsFormActivity.class);
+
+            user_data.setName(idfNameEditText.getText().toString());
+            user_data.setAge(age);
+
+            if(idfGenderRadioGroup.getCheckedRadioButtonId()==-1)
+            {
+                Toast.makeText(getApplicationContext(), "Please select Gender", Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+
+                int selectedId = idfGenderRadioGroup.getCheckedRadioButtonId();
+
+                selectedRadioButton = (RadioButton)findViewById(selectedId);
+            }
+            user_data.setSex(selectedRadioButton.getText().toString());
+            user_data.setMobileNo(idfMobileNoEditText.getText().toString());
+            user_data.setEmail(idfEmailAddressEditText.getText().toString());
+
+            toSymptomsIntent.putExtra("FormData",user_data);
             startActivity(toSymptomsIntent);
         }
     }

@@ -22,6 +22,7 @@
         <activity android:name=".IdentificationDataFormActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".ResultsActivity" />
+        <activity android:name=".LoadingResultsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

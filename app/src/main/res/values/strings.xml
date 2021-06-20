@@ -8,7 +8,8 @@
     <string name="app_back_button">Back</string>
     <string name="app_next_button">Next</string>
     <string name="app_click_image_button">Click Image</string>
-    <string name="app_get_results">Get Results</string>
+    <string name="app_get_results_button">Get Results</string>
+    <string name="app_home_button">Home</string>
     <string name="app_name_anaemia_uppercase">ANAEMIA</string>
     <string name="app_name_detection_uppercase">DETECTION</string>
     <string name="app_about_uppercase">ABOUT</string>
@@ -53,4 +54,12 @@
     <string name="app_capture_images_left_eye_image">Left Eye Image</string>
     <string name="app_capture_images_right_eye">RIGHT EYE :</string>
     <string name="app_capture_images_right_eye_image">Right Eye Image</string>
+    <string name="app_loading_results_loading_uppercase">LOADING</string>
+    <string name="app_loading_results_results_uppercase">RESULTS...</string>
+    <string name="app_results_instruction_uppercase">RESULTS</string>
+    <string name="app_results_name">NAME :</string>
+    <string name="app_results_age">AGE :</string>
+    <string name="app_results_gender">GENDER :</string>
+    <string name="app_results_symptoms">SYMPTOMS :</string>
+    <string name="app_results_you_are">YOU ARE</string>
 </resources>

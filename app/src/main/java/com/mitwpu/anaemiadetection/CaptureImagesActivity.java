@@ -270,12 +270,12 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
         if (requestCode == REQUEST_RIGHT_CAPTURE && resultCode == RESULT_OK) {
             Bitmap imageBitmap = BitmapFactory.decodeFile(rightImagePath);
             captureImagesRightEyeImage.setImageBitmap(imageBitmap);
-            captureImagesClickRightEyeImageButton.setText("Retake Picture of Right Eye");
+            captureImagesClickRightEyeImageButton.setText("Retake Image of Right Eye");
         }
         if (requestCode == REQUEST_LEFT_CAPTURE && resultCode == RESULT_OK) {
             Bitmap imageBitmap = BitmapFactory.decodeFile(leftImagePath);
             captureImagesLeftEyeImage.setImageBitmap(imageBitmap);
-            captureImagesClickLeftEyeImageButton.setText("Retake Picture of Left Eye");
+            captureImagesClickLeftEyeImageButton.setText("Retake Image of Left Eye");
         }
     }
 
@@ -311,8 +311,9 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
             openCamera(1);
         }
         else if (v.getId() == R.id.getResultsButton) {
-            Intent toResultsIntent = new Intent(CaptureImagesActivity.this, ResultsActivity.class);
-            startActivity(toResultsIntent);
+            Intent toLoadingResultsIntent = new Intent(CaptureImagesActivity.this, LoadingResultsActivity.class);
+            toLoadingResultsIntent.putExtra("FormData",user_data);
+            startActivity(toLoadingResultsIntent);
         }
     }
 

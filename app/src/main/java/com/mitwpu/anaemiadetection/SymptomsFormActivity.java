@@ -61,34 +61,38 @@ public class SymptomsFormActivity extends AppCompatActivity implements View.OnCl
                 symptoms.append(symptomsFatigueRadioButton.getText().toString());
             }
             if (symptomsLightHeadednessRadioButton.isChecked()) {
-                symptoms.append(","+symptomsLightHeadednessRadioButton.getText().toString());
+                symptoms.append(", "+symptomsLightHeadednessRadioButton.getText().toString());
             }
             if (symptomsDizzinessRradioButton.isChecked()) {
-                symptoms.append(","+symptomsDizzinessRradioButton.getText().toString());
+                symptoms.append(", "+symptomsDizzinessRradioButton.getText().toString());
             }
             if (symptomsMalaiseRadioButton.isChecked()) {
-                symptoms.append(","+symptomsMalaiseRadioButton.getText().toString());
+                symptoms.append(", "+symptomsMalaiseRadioButton.getText().toString());
             }
             if (symptomsFastHeartRateRadioButton.isChecked()) {
-                symptoms.append(","+symptomsFastHeartRateRadioButton.getText().toString());
+                symptoms.append(", "+symptomsFastHeartRateRadioButton.getText().toString());
             }
             if (symptomsPalpitationsRadioButton.isChecked()) {
-                symptoms.append(","+symptomsPalpitationsRadioButton.getText().toString());
+                symptoms.append(", "+symptomsPalpitationsRadioButton.getText().toString());
             }
             if (symptomsHeadacheRadioButton.isChecked()) {
-                symptoms.append(","+symptomsHeadacheRadioButton.getText().toString());
+                symptoms.append(", "+symptomsHeadacheRadioButton.getText().toString());
             }
             if (symptomsWeaknessRadioButton.isChecked()) {
-                symptoms.append(","+symptomsWeaknessRadioButton.getText().toString());
+                symptoms.append(", "+symptomsWeaknessRadioButton.getText().toString());
             }
             if (symptomsBrittleNailsRadioButton.isChecked()) {
-                symptoms.append(","+symptomsBrittleNailsRadioButton.getText().toString());
+                symptoms.append(", "+symptomsBrittleNailsRadioButton.getText().toString());
             }
             if (symptomsPallorRadioButton.isChecked()) {
-                symptoms.append(","+symptomsPallorRadioButton.getText().toString());
+                symptoms.append(", "+symptomsPallorRadioButton.getText().toString());
             }
             if (symptomsShortnessOfBreathRadioButton.isChecked()) {
-                symptoms.append(","+symptomsShortnessOfBreathRadioButton.getText().toString());
+                symptoms.append(", "+symptomsShortnessOfBreathRadioButton.getText().toString());
+            }
+
+            if(symptoms.charAt(0)==','){
+                symptoms.delete(0,2);
             }
 
             user_data.setSymptoms(symptoms.toString());

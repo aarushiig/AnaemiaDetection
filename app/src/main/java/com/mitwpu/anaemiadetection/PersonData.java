@@ -12,6 +12,7 @@ public class PersonData implements Serializable {
     public   String result;
     public   String percentage;
     public   String email;
+    public   StringBuffer leftEyeImagePath, rightEyeImagePath;
 
     PersonData(){
         this.result="Not Set";
@@ -47,5 +48,13 @@ public class PersonData implements Serializable {
 
     public void setPercentage(String percentage) {
         this.percentage = percentage;
+    }
+
+    public void setLeftEyeImagePath(StringBuffer leftEyeImage) {
+        this.leftEyeImagePath = leftEyeImage;
+    }
+
+    public void setRightEyeImagePath(StringBuffer rightEyeImage) {
+        this.rightEyeImagePath = rightEyeImage;
     }
 }

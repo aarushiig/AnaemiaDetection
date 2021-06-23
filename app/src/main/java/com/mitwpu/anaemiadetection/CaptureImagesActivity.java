@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Base64;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -33,6 +34,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
@@ -53,6 +55,7 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
     String currentImagePath = null;
     String leftImagePath = null;
     String rightImagePath = null;
+    StringBuffer leftEyeImagePath, rightEyeImagePath;
 
 
     @Override
@@ -274,13 +277,35 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
         if (requestCode == REQUEST_RIGHT_CAPTURE && resultCode == RESULT_OK) {
             Bitmap imageBitmap = BitmapFactory.decodeFile(rightImagePath);
             captureImagesRightEyeImage.setImageBitmap(imageBitmap);
+
+//            rightEyeImageEncoded=new StringBuffer(getBase64Image(imageBitmap));
+            user_data.setRightEyeImagePath(new StringBuffer(rightImagePath));
+
             captureImagesClickRightEyeImageButton.setText("Retake Image of Right Eye");
         }
         if (requestCode == REQUEST_LEFT_CAPTURE && resultCode == RESULT_OK) {
             Bitmap imageBitmap = BitmapFactory.decodeFile(leftImagePath);
             captureImagesLeftEyeImage.setImageBitmap(imageBitmap);
+
+//            leftEyeImageEncoded=new StringBuffer(getBase64Image(imageBitmap));
+            user_data.setLeftEyeImagePath(new StringBuffer(leftImagePath));
+
             captureImagesClickLeftEyeImageButton.setText("Retake Image of Left Eye");
         }
+    }
+
+    public String getBase64Image(Bitmap bitmap) {
+        try {
+            ByteBuffer buffer =
+                    ByteBuffer.allocate(bitmap.getRowBytes() *
+                            bitmap.getHeight());
+            bitmap.copyPixelsToBuffer(buffer);
+            byte[] data = buffer.array();
+            return Base64.encodeToString(data, Base64.DEFAULT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private File getImageFile(int camera) throws IOException {
@@ -328,7 +353,10 @@ public class CaptureImagesActivity extends AppCompatActivity implements View.OnC
         else if (v.getId() == R.id.getResultsButton) {
             Intent toLoadingResultsIntent = new Intent(CaptureImagesActivity.this, LoadingResultsActivity.class);
             if(hasImage(captureImagesLeftEyeImage) && hasImage(captureImagesRightEyeImage)){
+
                 toLoadingResultsIntent.putExtra("FormData",user_data);
+//                toLoadingResultsIntent.putExtra("leftEyeImagePath",leftEyeImagePath);
+//                toLoadingResultsIntent.putExtra("rightEyeImagePath",rightEyeImagePath);
                 startActivity(toLoadingResultsIntent);
             }
             else {

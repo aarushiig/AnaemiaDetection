@@ -134,29 +134,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idfDobEditText" />
 
-    <RadioButton
-        android:id="@+id/idfMaleRadioButton"
+    <RadioGroup
+        android:id="@+id/idfGenderRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:fontFamily="@font/kadwa_bold"
-        android:text="@string/app_idf_gender_male"
-        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
+        app:layout_constraintTop_toBottomOf="@+id/idfGenderText">
 
-    <RadioButton
-        android:id="@+id/idfFemaleRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:fontFamily="@font/kadwa_bold"
-        android:text="@string/app_idf_gender_female"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/idfMaleRadioButton"
-        app:layout_constraintTop_toBottomOf="@+id/idfGenderText" />
+        <RadioButton
+            android:id="@+id/idfMaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/kadwa_bold"
+            android:text="@string/app_idf_gender_male"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/idfFemaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/kadwa_bold"
+            android:text="@string/app_idf_gender_female"
+            android:textSize="14sp" />
+
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/idfMobileNoText"
@@ -169,7 +177,7 @@
         android:text="@string/app_idf_mobile_no"
         android:textColor="#ed1b24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idfMaleRadioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/idfGenderRadioGroup" />
 
     <EditText
         android:id="@+id/idfMobileNoEditText"
